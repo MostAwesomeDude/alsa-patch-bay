@@ -1,0 +1,1 @@
+SUBDIRS = alsa jack
