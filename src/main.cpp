@@ -102,7 +102,7 @@ int main(int argc, char ** argv) {
   else
     driver++;
   
-  ptr = strchr (driver, '-');
+  ptr = strchr ((char*)driver, '-');
   if (ptr)
     *ptr = '\0';
   

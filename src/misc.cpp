@@ -9,6 +9,7 @@
  *
  */
 
+#include <cstdlib>
 #include <sstream>
 
 #include "misc.h"

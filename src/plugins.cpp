@@ -15,6 +15,7 @@
 #include <errno.h>
 #include <string.h>
 
+#include <cstdlib>
 #include <iostream>
 #include <list>
 #include <string>

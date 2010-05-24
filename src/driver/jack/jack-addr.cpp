@@ -9,6 +9,8 @@
  *
  */
 
+#include <cstdlib>
+#include <cstring>
 #include <iostream>
 
 #include "jack-addr.h"
@@ -56,7 +58,7 @@ Addr:: port () const
 {
   char * ptr;
 
-  ptr = strchr (_portName.c_str(), ':');
+  ptr = strchr ((char*)_portName.c_str(), ':');
   ptr++;
   
   std::string ports (ptr);
