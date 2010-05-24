@@ -1,23 +1,22 @@
+uiplugindir = $(pkglibdir)/ui
 
-EXTRA_PROGRAMS = fltk.so
+if FLTK
+uiplugin_LTLIBRARIES = fltk.la
+endif #FLTK
 
-fltk_so_SOURCES = \
+fltk_la_SOURCES = \
 	apb-fltk.cpp apb-fltk.h
 
-fltk_so_CXXFLAGS = \
+fltk_la_CXXFLAGS = \
 	$(APB_CXXFLAGS) \
 	$(FLTK_CXXFLAGS) \
-	$(LADCCA_CFLAGS)
+	$(LADCCA_CFLAGS) \
+	-fpic
 
-fltk_so_LDFLAGS = \
+fltk_la_LDFLAGS = \
 	$(FLTK_LDFLAGS) \
-	-shared
-
-uiplugindir = $(pkglibdir)/ui
+	-shared \
+	-module
 
 
 PLUGINS = 
-
-if FLTK
-uiplugin_PROGRAMS = fltk.so
-endif #FLTK
