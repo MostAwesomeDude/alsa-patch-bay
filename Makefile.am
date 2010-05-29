@@ -1,3 +1,5 @@
+ACLOCAL_AMFLAGS = -I m4
+
 SUBDIRS = m4 src
 
 EXTRA_DIST = Doxyfile.in alsa-patch-bay.desktop jack-patch-bay.desktop
