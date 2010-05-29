@@ -34,5 +34,5 @@ pixmap_DATA = 5-pin-din.png
 
 EXTRA_DIST = 5-pin-din.png 5-pin-din.xbm
 
-install-exec-local:
-	$(LN_S) -f $(bindir)/alsa-patch-bay $(bindir)/jack-patch-bay
+#install-exec-local:
+#	$(LN_S) -f $(bindir)/alsa-patch-bay $(bindir)/jack-patch-bay
